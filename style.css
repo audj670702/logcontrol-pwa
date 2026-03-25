@@ -400,11 +400,11 @@ button {
     align-items: flex-start;
   }
 
-  .brand-mark {
-    width: 58px;
-    height: 58px;
-    border-radius: 18px;
-  }
+.brand-logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+}
 
   .hero-actions,
   .support-actions {
