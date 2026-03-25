@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LogControl | Acceso a Ninox</title>
+  <title>LogControl</title>
   <meta
     name="description"
-    content="App instalable de LogControl para acceder a Ninox, guiar la instalación y ayudar a usuarios no técnicos."
+    content="LogControl como acceso instalable de escritorio."
   />
   <meta name="theme-color" content="#0f172a" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -21,108 +21,60 @@
 <body>
   <div class="app-shell">
     <header class="hero">
-<div class="brand-row">
-  <img
-    src="assets/icon-192.png"
-    alt="LogControl"
-    class="brand-logo"
-  />
-  <div>
-    <p class="eyebrow">LogControl</p>
-    <h1>Acceso claro, instalación simple y entrada directa a Ninox</h1>
-  </div>
-</div>
+      <div class="brand-row">
+        <img
+          src="assets/icon-192.png"
+          alt="LogControl"
+          class="brand-logo"
+        />
+        <div>
+          <p class="eyebrow">LogControl</p>
+          <h1>Acceso simple, directo y con tu marca</h1>
+        </div>
+      </div>
 
       <p class="hero-copy">
-        Instala LogControl como aplicación y utiliza esta pantalla como punto de entrada,
-        guía de instalación y soporte rápido para acceder a Ninox.
+        Instala LogControl en tu escritorio y accede desde una experiencia más clara,
+        rápida y profesional.
       </p>
 
       <div class="hero-actions">
-        <button id="openNinoxBtn" class="btn btn-primary" type="button">
-          Abrir Ninox
+        <button id="openPlatformBtn" class="btn btn-primary" type="button">
+          Ingresar
         </button>
 
         <button id="installBtn" class="btn btn-secondary" type="button" hidden>
-          Instalar LogControl
-        </button>
-      </div>
-
-      <div class="status-grid">
-        <article class="status-card">
-          <span class="status-label">Navegador detectado</span>
-          <strong id="browserValue">Detectando…</strong>
-        </article>
-
-        <article class="status-card">
-          <span class="status-label">Modo actual</span>
-          <strong id="displayModeValue">Navegador</strong>
-        </article>
-
-        <article class="status-card">
-          <span class="status-label">Sesión Ninox</span>
-          <strong>Depende de Ninox y del navegador</strong>
-        </article>
-      </div>
-
-      <div id="installBanner" class="install-banner" hidden>
-        <div>
-          <strong>Instalación disponible</strong>
-          <p>
-            Puedes instalar LogControl desde este botón para que se abra como aplicación.
-          </p>
-        </div>
-        <button id="installBannerBtn" class="btn btn-primary btn-small" type="button">
-          Instalar ahora
+          Instalar app
         </button>
       </div>
     </header>
 
     <main class="main-layout">
-      <section class="panel">
+      <section class="panel panel-wide">
         <div class="panel-head">
-          <p class="eyebrow">Guía inteligente</p>
-          <h2>Cómo instalar según tu navegador</h2>
-        </div>
-
-        <div class="instruction-highlight">
-          <span class="pill" id="browserPill">Detectando navegador</span>
-          <p id="browserSummary">
-            Estamos identificando tu navegador para mostrarte la ruta más clara.
-          </p>
-        </div>
-
-        <ol id="instructionList" class="instruction-list"></ol>
-      </section>
-
-      <section class="panel">
-        <div class="panel-head">
-          <p class="eyebrow">Ruta recomendada</p>
-          <h2>Flujo de uso</h2>
+          <p class="eyebrow">LogControl</p>
+          <h2>Una experiencia más limpia para tu operación diaria</h2>
         </div>
 
         <div class="cards-grid">
           <article class="mini-card">
-            <span class="step-number">1</span>
-            <h3>Instala LogControl</h3>
+            <h3>Acceso rápido</h3>
             <p>
-              Usa el botón de instalación o las instrucciones guiadas de esta pantalla.
+              Abre LogControl desde tu escritorio y entra de forma más directa a tu entorno de trabajo.
             </p>
           </article>
 
           <article class="mini-card">
-            <span class="step-number">2</span>
-            <h3>Abre Ninox</h3>
+            <h3>Instalación simple</h3>
             <p>
-              Usa el botón principal para entrar a Ninox en la misma ventana.
+              Cuando el navegador lo permita, podrás instalar la app con un solo botón.
             </p>
           </article>
 
           <article class="mini-card">
-            <span class="step-number">3</span>
-            <h3>Reutiliza la sesión</h3>
+            <h3>Marca centralizada</h3>
             <p>
-              Si Ninox mantiene tu sesión, volverás a entrar sin autenticarte otra vez.
+              La experiencia se presenta desde LogControl para mantener una identidad más clara y consistente.
             </p>
           </article>
         </div>
@@ -130,72 +82,12 @@
 
       <section class="panel panel-wide">
         <div class="panel-head">
-          <p class="eyebrow">Ayuda rápida</p>
-          <h2>Preguntas frecuentes</h2>
-        </div>
-
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary>No veo el botón “Instalar LogControl”</summary>
-            <div class="faq-content">
-              <p>
-                Algunos navegadores no muestran el mismo flujo visual. Revisa la guía
-                detectada arriba. Si el navegador no admite este evento, utiliza el menú
-                del navegador para instalar la app o crear el acceso.
-              </p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>Ninox me volvió a pedir login</summary>
-            <div class="faq-content">
-              <p>
-                Eso depende de la sesión de Ninox y de las políticas del navegador.
-                LogControl no almacena ni controla credenciales.
-              </p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>¿LogControl reemplaza a Ninox?</summary>
-            <div class="faq-content">
-              <p>
-                No. LogControl es la capa de acceso, orientación y entrada. Ninox sigue
-                siendo la plataforma operativa.
-              </p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary>¿Qué pasa si estoy sin internet?</summary>
-            <div class="faq-content">
-              <p>
-                LogControl puede seguir mostrando su interfaz básica, pero Ninox requiere
-                conexión para operar en línea.
-              </p>
-            </div>
-          </details>
-        </div>
-      </section>
-
-      <section class="panel panel-wide">
-        <div class="panel-head">
-          <p class="eyebrow">Soporte</p>
-          <h2>Acciones útiles</h2>
-        </div>
-
-        <div class="support-actions">
-          <button id="openNinoxBtnBottom" class="btn btn-primary" type="button">
-            Abrir Ninox
-          </button>
-          <button id="scrollInstallBtn" class="btn btn-secondary" type="button">
-            Ver instrucciones de instalación
-          </button>
+          <p class="eyebrow">Uso recomendado</p>
+          <h2>Trabaja desde la app instalada</h2>
         </div>
 
         <p class="support-note">
-          Personaliza el correo, teléfono o enlace interno de soporte directamente en este archivo
-          si deseas agregar contacto operativo de LogControl.
+          Utiliza LogControl como acceso principal desde tu computadora para mantener una experiencia más ordenada y práctica.
         </p>
       </section>
     </main>
